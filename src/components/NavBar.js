@@ -17,11 +17,15 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
   },
+
+  navBar: {
+    width: "90px",
+  },
 }));
 const NavBar = () => {
   const classes = useStyles();
   return (
-    <AppBar position="sticky" color="inherit">
+    <AppBar style={{ width: "90%" }} position="sticky" color="inherit">
       <Toolbar>
         <Typography variant="h6" className={classes.title}>
           Foodies

@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import { ProductWrapper, CardImage } from "../styles";
-const CategoryCard = ({ category }) => {
+const RecipeCard = ({ recipe }) => {
   return (
     <ProductWrapper className="col-lg-4 col-md-6 col-sm-6">
-      <Link to={`/categories/${category.slug}`}>
-        <CardImage alt={category.name} src={category.image} />
+      <Link to={`/recipes/${recipe.slug}`}>
+        <CardImage alt={recipe.name} src={recipe.image} />
       </Link>
-      <p>{category.name}</p>
+      <p>{recipe.name}</p>
     </ProductWrapper>
   );
 };
-export default CategoryCard;
+export default RecipeCard;
